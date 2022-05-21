@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@craco/craco": "^7.0.0-alpha.0",
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "@tailwindcss/forms": "^0.5.2",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -30,7 +32,8 @@
     "eject": "react-scripts eject",
     "prepare": "husky install",
     "lint": "eslint --fix --ext .js,.ts,.tsx ./src --ignore-path .gitignore",
-    "storybook": "start-storybook -p 6006 -s public"
+    "storybook": "start-storybook -p 6006 -s public",
+    "build:tailwind": "tailwind build src/assets/styles/index.css -o src/assets/styles/tailwind.css"
   },
   "jest": {
     "moduleNameMapper": {
