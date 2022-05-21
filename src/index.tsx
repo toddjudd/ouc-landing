@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import '@/assets/styles/tailwind.css';
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import '@fortawesome/fontawesome-pro/css/all.min.css';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';

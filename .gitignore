@@ -28,3 +28,4 @@ localhost.pem
 
 # Storybook.js
 /storybook-static
+.npmrc
