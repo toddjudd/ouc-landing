@@ -29,11 +29,6 @@ export const Footer = () => {
               </h5>
               <div className='mt-6 lg:mb-0 mb-6'>
                 <button
-                  className='bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2'
-                  type='button'>
-                  <i className='fab fa-twitter'></i>
-                </button>
-                <button
                   className='bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2'
                   type='button'>
                   <i className='fab fa-facebook-square'></i>
@@ -41,18 +36,13 @@ export const Footer = () => {
                 <button
                   className='bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2'
                   type='button'>
-                  <i className='fab fa-dribbble'></i>
-                </button>
-                <button
-                  className='bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2'
-                  type='button'>
-                  <i className='fab fa-github'></i>
+                  <i className='fab fa-instagram'></i>
                 </button>
               </div>
             </div>
             <div className='w-full lg:w-6/12 px-4'>
               <div className='flex flex-wrap items-top mb-6'>
-                <div className='w-full lg:w-4/12 px-4 ml-auto'>
+                {/* <div className='w-full lg:w-4/12 px-4 ml-auto'>
                   <span className='block uppercase text-blueGray-500 text-sm font-semibold mb-2'>
                     Useful Links
                   </span>
@@ -121,7 +111,7 @@ export const Footer = () => {
                       </a>
                     </li>
                   </ul>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -129,11 +119,11 @@ export const Footer = () => {
           <div className='flex flex-wrap items-center md:justify-between justify-center'>
             <div className='w-full md:w-4/12 px-4 mx-auto text-center'>
               <div className='text-sm text-blueGray-500 font-semibold py-1'>
-                Copyright © {new Date().getFullYear()} Notus React by{' '}
+                Copyright © {new Date().getFullYear()}{' '}
                 <a
-                  href='https://www.creative-tim.com?ref=nr-footer'
+                  href='https://toddjudd.com?ref=ouconstruct-footer'
                   className='text-blueGray-500 hover:text-blueGray-800'>
-                  Creative Tim
+                  Todd Judd
                 </a>
                 .
               </div>

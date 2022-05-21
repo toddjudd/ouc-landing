@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import '@/assets/styles/tailwind.css';
+import '@/assets/styles/index.css';
+// import '@/assets/styles/tailwind.css';
 import '@fortawesome/fontawesome-pro/css/all.min.css';
 
 import App from './App';
