@@ -1,7 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
-import PagesDropdown from '@/components/Dropdowns/PagesDropdown';
 
 export const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
