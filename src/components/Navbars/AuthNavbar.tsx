@@ -82,6 +82,12 @@ export const Navbar = () => {
               <li className='flex items-center'>
                 <button
                   className='bg-white text-blueGray-700 active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150'
+                  onClick={() => {
+                    window.open(
+                      'https://app.ouconstruct.com/login.php',
+                      '_blank'
+                    );
+                  }}
                   type='button'>
                   Employee Login{' '}
                   <i className='fas fa-arrow-right-to-bracket'></i>
