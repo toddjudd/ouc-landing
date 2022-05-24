@@ -3,6 +3,8 @@ import { isUint16Array } from 'util/types';
 import { Formik, Field, Form, FormikHelpers, FormikProps } from 'formik';
 import * as Yup from 'yup';
 
+import { axios } from '@/lib/axios';
+
 interface Values {
   fullName: string;
   email: string;
@@ -15,8 +17,24 @@ const ContactSchema = Yup.object().shape({
     .min(2, 'Name must be between 2 and 50 characters')
     .required('Required'),
   email: Yup.string().email('Invalid email').required('Required'),
+  phoneNumber: Yup.string(),
   message: Yup.string().required('Required'),
 });
+
+const handleSubmit = async (
+  values: Values,
+  { resetForm }: FormikHelpers<Values>
+) => {
+  try {
+    await axios.post('/api/sendMail', values);
+    resetForm();
+    //toast success
+  } catch (error) {
+    console.log(error);
+    resetForm();
+    //toast failuer
+  }
+};
 
 export const ContactForm = () => {
   return (
@@ -29,15 +47,7 @@ export const ContactForm = () => {
           message: '',
         }}
         validationSchema={ContactSchema}
-        onSubmit={(
-          values: Values,
-          { setSubmitting }: FormikHelpers<Values>
-        ) => {
-          setTimeout(() => {
-            alert(JSON.stringify(values, null, 2));
-            setSubmitting(false);
-          }, 500);
-        }}>
+        onSubmit={handleSubmit}>
         {({ errors, touched, isSubmitting }: FormikProps<Values>) => (
           <Form className='flex-auto p-5 lg:p-10'>
             <h4 className='text-2xl font-semibold'>Want to work with us?</h4>
@@ -90,6 +100,30 @@ export const ContactForm = () => {
               {errors.email && touched.email && (
                 <p className='text-red-600 text-xs text-right pt-2 font-bold'>
                   {errors.email}
+                </p>
+              )}
+            </div>
+
+            <div className='relative w-full mb-3'>
+              <label
+                className='block uppercase text-blueGray-600 text-xs font-bold mb-2'
+                htmlFor='phoneNumber'>
+                Phone Number
+              </label>
+              <Field
+                className={
+                  'border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150' +
+                  (errors.phoneNumber && touched.phoneNumber
+                    ? ' outline outline-3 outline-red-600'
+                    : '')
+                }
+                placeholder='(801) 555-5555'
+                id='phoneNumber'
+                name='phoneNumber'
+              />
+              {errors.phoneNumber && touched.phoneNumber && (
+                <p className='text-red-600 text-xs text-right pt-2 font-bold'>
+                  {errors.phoneNumber}
                 </p>
               )}
             </div>
