@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 // components
 
-import IndexDropdown from '@/components/Dropdowns/IndexDropdown.js';
+import IndexDropdown from '@/components/Dropdowns/IndexDropdown';
 
 export const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);

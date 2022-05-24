@@ -1,4 +1,4 @@
-import UserDropdown from '@/components/Dropdowns/UserDropdown.js';
+import UserDropdown from '@/components/Dropdowns/UserDropdown';
 
 export const Navbar = () => {
   return (
