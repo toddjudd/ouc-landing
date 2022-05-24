@@ -1,25 +1,6 @@
-# React Template
+# Over & Under Construction
 
-This repo is a template for a basic react application.
-
-This trys to follow as many pratices as possible from
-[bulletproof-react](https://github.com/alan2207/bulletproof-react).
-
-This repo makes use of the following packages to help get started building
-quicker:
-
-- Typescript for easier to read and debug code.
-- eslint and prettier code formating and validation
-- craco for some custom webpack configuration
-- Tailwindcss for quick css development
-- react-bootstrap as a simple UI component library.
-- Storybook for component iteration and documentation
-
-## Things I'd lie to include
-
-- Jest for testing
-- Some form of commit linting for clean standard commit messages
-- Some form of spell check linting
+see it in [production](https://ouconstruct.com)!
 
 ## Available Scripts
 
@@ -96,6 +77,12 @@ Runs eslint to lint and fix Javascript or Typescript files.
 Runs storybook local server.
 
 ## Learn More
+
+Checkout the
+[Notus Template Documentation](https://www.creative-tim.com/product/notus-js)
+
+Checkout my
+[Create React App Template](https://github.com/toddjudd/cra-template-toddjudd)
 
 You can learn more in the
 [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).

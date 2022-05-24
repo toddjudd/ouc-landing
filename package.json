@@ -32,13 +32,17 @@
   "scripts": {
     "start": "craco start",
     "start:https": "mkcert localhost&&set HTTPS=true&&set SSL_CRT_FILE=.\\localhost.pem&&set SSL_KEY_FILE=.\\localhost-key.pem&&npm run start",
-    "build": "craco build",
+    "build": "npm run build:tailwind & craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
     "prepare": "husky install",
     "lint": "eslint --fix --ext .js,.ts,.tsx ./src --ignore-path .gitignore",
     "storybook": "start-storybook -p 6006 -s public",
-    "build:tailwind": "tailwind build src/assets/styles/index.css -o src/assets/styles/tailwind.css"
+    "build:tailwind": "tailwind build src/assets/styles/index.css -o src/assets/styles/tailwind.css",
+    "docker": "docker run --name ouc-landing --rm -d -p 3001:3000 registry.ouconstruct.com/ouc-landing:latest",
+    "docker-build": "npm run build & docker build -t ouc-landing:latest .",
+    "docker-push": "docker tag ouc-landing:latest  registry.ouconstruct.com/ouc-landing:latest & docker push  registry.ouconstruct.com/ouc-landing:latest",
+    "docker-pub": "npm run docker-build && npm run docker-push"
   },
   "jest": {
     "moduleNameMapper": {
