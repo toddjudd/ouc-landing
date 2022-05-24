@@ -1,5 +1,3 @@
-import { isUint16Array } from 'util/types';
-
 import { Formik, Field, Form, FormikHelpers, FormikProps } from 'formik';
 import * as Yup from 'yup';
 
