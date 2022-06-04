@@ -1136,19 +1136,24 @@ select {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-red-400 {
+.bg-lime-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+  background-color: rgb(146 178 51 / var(--tw-bg-opacity));
 }
 
-.bg-lightBlue-400 {
+.bg-navy-400 {
   --tw-bg-opacity: 1;
-  background-color: rgb(56 189 248 / var(--tw-bg-opacity));
+  background-color: rgb(43 74 94 / var(--tw-bg-opacity));
 }
 
-.bg-emerald-400 {
+.bg-sky-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(52 211 153 / var(--tw-bg-opacity));
+  background-color: rgb(108 150 196 / var(--tw-bg-opacity));
+}
+
+.bg-ashBlue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(136 163 158 / var(--tw-bg-opacity));
 }
 
 .bg-cover {
@@ -1434,9 +1439,9 @@ select {
   color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
-.text-lightBlue-500 {
+.text-ashBlue-500 {
   --tw-text-opacity: 1;
-  color: rgb(14 165 233 / var(--tw-text-opacity));
+  color: rgb(136 163 158 / var(--tw-text-opacity));
 }
 
 .text-blueGray-800 {
