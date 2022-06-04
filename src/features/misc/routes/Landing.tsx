@@ -144,7 +144,7 @@ export const Landing = () => {
               <div className='lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center'>
                 <div className='relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg'>
                   <div className='px-4 py-5 flex-auto'>
-                    <div className='text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400'>
+                    <div className='text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-lime-500'>
                       <i className='fas fa-award'></i>
                     </div>
                     <h6 className='text-xl font-semibold'>Fully Licensed</h6>
@@ -160,7 +160,7 @@ export const Landing = () => {
               <div className='w-full md:w-4/12 px-4 text-center'>
                 <div className='relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg'>
                   <div className='px-4 py-5 flex-auto'>
-                    <div className='text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-lightBlue-400'>
+                    <div className='text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-navy-400'>
                       <i className='fas fa-family'></i>
                     </div>
                     <h6 className='text-xl font-semibold'>
@@ -178,7 +178,7 @@ export const Landing = () => {
               <div className='pt-6 w-full md:w-4/12 px-4 text-center'>
                 <div className='relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg'>
                   <div className='px-4 py-5 flex-auto'>
-                    <div className='text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-emerald-400'>
+                    <div className='text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-sky-500'>
                       <i className='fa-solid fa-handshake'></i>
                     </div>
                     <h6 className='text-xl font-semibold'>Customer Service</h6>
@@ -225,7 +225,7 @@ export const Landing = () => {
               </div>
 
               <div className='w-full md:w-5/12 px-4 mr-auto ml-auto'>
-                <div className='relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-lightBlue-500'>
+                <div className='relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-ashBlue-500'>
                   <img
                     alt='...'
                     src={juddFamilyImg}
@@ -239,7 +239,7 @@ export const Landing = () => {
                       className='absolute left-0 w-full block h-95-px -top-94-px'>
                       <polygon
                         points='-30,95 583,95 583,65'
-                        className='text-lightBlue-500 fill-current'></polygon>
+                        className='text-ashBlue-500 fill-current'></polygon>
                     </svg>
                     <h4 className='text-xl font-bold text-white'>
                       The Judd Family

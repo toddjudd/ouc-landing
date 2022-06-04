@@ -23,6 +23,26 @@ module.exports = {
   theme: {
     colors: {
       ...colors,
+      navy: {
+        300: '#3d6884',
+        400: '#2b4a5e',
+        500: '#1a2c38',
+      },
+      sky: {
+        500: '#6c96c4',
+      },
+      ashBlue: {
+        500: '#88a39e',
+      },
+      lime: {
+        500: '#92b233',
+      },
+      pine: {
+        500: '#495219',
+      },
+      oucGreen: {
+        500: '#1d3310',
+      },
     },
     extend: {
       minHeight: {
