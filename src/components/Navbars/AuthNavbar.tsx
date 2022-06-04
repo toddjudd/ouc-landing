@@ -46,7 +46,7 @@ export const Navbar = () => {
               {/* <li className='flex items-center'>
                 <PagesDropdown />
               </li> */}
-              <li className='flex items-center'>
+              {/* <li className='flex items-center'>
                 <a
                   className='lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold'
                   href='https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdemos.creative-tim.com%2Fnotus-react%2F%23%2F'
@@ -66,7 +66,7 @@ export const Navbar = () => {
                   <i className='lg:text-blueGray-200 text-blueGray-400 fab fa-instagram text-lg leading-lg ' />
                   <span className='lg:hidden inline-block ml-2'>Tweet</span>
                 </a>
-              </li>
+              </li> */}
               {/* 
               <li className='flex items-center'>
                 <a
@@ -83,10 +83,8 @@ export const Navbar = () => {
                 <button
                   className='bg-white text-blueGray-700 active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150'
                   onClick={() => {
-                    window.open(
-                      'https://app.ouconstruct.com/login.php',
-                      '_blank'
-                    );
+                    window.location.href =
+                      'https://app.ouconstruct.com/login.php';
                   }}
                   type='button'>
                   Employee Login{' '}
