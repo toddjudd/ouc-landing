@@ -207,7 +207,7 @@ export const Landing = () => {
                   home owners, individuals, and local buisnesses
                 </p>
                 <p className='text-lg font-light leading-relaxed mt-0 mb-4 text-blueGray-600'>
-                  With his 40+ years experience in telecomunications, general
+                  With his 30+ years experience in telecomunications, general
                   construction, and other specialties Dave brings a unique and
                   well rounded view to each project. Dave can see the bigger
                   picture ensuring that his work is not only excelent, but fits
