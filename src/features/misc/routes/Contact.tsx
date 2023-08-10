@@ -24,7 +24,10 @@ const handleSubmit = async (
   { resetForm }: FormikHelpers<Values>
 ) => {
   try {
-    await axios.post('https://ouc-functions.azurewebsites.net/api/sendMail', values);
+    await axios.post(
+      'https://ouc-functions.azurewebsites.net/api/sendMail',
+      values
+    );
     resetForm();
     //toast success
   } catch (error) {
