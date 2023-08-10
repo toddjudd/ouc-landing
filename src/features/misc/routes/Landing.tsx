@@ -19,17 +19,17 @@ export const Landing = () => {
   const services: Service[] = [
     {
       title: 'Utility Construction',
-      icon: 'fa-triangle-person-digging',
+      icon: 'fa-person-digging',
       paragraphs: [
         'Both inside and outside infrastructure including overhead and underground right-of-way construction',
       ],
       bulletPoints: [
         {
-          icon: 'fa-buildings',
+          icon: 'fa-building',
           text: 'Commercial',
         },
         {
-          icon: 'fa-utility-pole-double',
+          icon: 'fa-phone',
           text: 'Telecomunications',
         },
       ],
@@ -57,15 +57,15 @@ export const Landing = () => {
       icon: 'fa-globe ',
       bulletPoints: [
         {
-          icon: 'fa-utility-pole',
+          icon: 'fa-tower-broadcast',
           text: 'Utility Pole',
         },
         {
-          icon: 'fa-tree-deciduous',
+          icon: 'fa-tree',
           text: 'Tree Trimming and Removal',
         },
         {
-          icon: 'fa-up',
+          icon: 'fa-up-long',
           text: 'Hard to reach Heights',
         },
       ],
@@ -78,11 +78,11 @@ export const Landing = () => {
       icon: 'fa-globe ',
       bulletPoints: [
         {
-          icon: 'fa-shovel',
+          icon: 'fa-person-digging',
           text: 'Trenching, leveling and other limited excavation.',
         },
         {
-          icon: 'fa-down',
+          icon: 'fa-bore-hole',
           text: 'Trenchless bore work',
         },
       ],
@@ -161,7 +161,7 @@ export const Landing = () => {
                 <div className='relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg'>
                   <div className='px-4 py-5 flex-auto'>
                     <div className='text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-navy-400'>
-                      <i className='fas fa-family'></i>
+                      <i className='fas fa-people-group'></i>
                     </div>
                     <h6 className='text-xl font-semibold'>
                       Family Owned <br /> & Operated
