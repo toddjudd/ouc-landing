@@ -9,7 +9,6 @@ ENV PATH /app/node_modules/.bin:$PATH
 #install Cache and App Dependencies
 COPY package.json /app/package.json
 COPY package-lock.json /app/package-lock.json
-COPY .npmrc /app/.npmrc
 RUN npm ci
 # RUN npm install -g --silent react-scripts@3.3.0
 RUN npm install -g serve
